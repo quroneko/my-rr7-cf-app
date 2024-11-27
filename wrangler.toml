@@ -1,0 +1,12 @@
+workers_dev = true
+name = "my-rr7-cf-app"
+compatibility_date = "2024-11-18"
+compatibility_flags = ["nodejs_compat"]
+main = "./build/server/index.js"
+assets = { directory = "./build/client/" }
+
+[[d1_databases]]
+binding = "DB"
+database_name = "my-rr7-cf-db"
+database_id = "bd65f2f7-a345-4fd3-8581-93c097901bb6"
+migrations_dir = "drizzle"
